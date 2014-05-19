@@ -1,8 +1,8 @@
 zabbixapi
 =========
-1、下载脚本
-2、编辑脚本，修改17~26行的配置
-3、执行
+1、下载脚本   
+2、编辑脚本，修改17~26行的配置   
+3、执行   
 
     HELP:
     usage: ./zabbix_api.py [options]
@@ -28,15 +28,15 @@ zabbixapi
         -V
             Show this program's version.
 			
-所有操作都是支持批量的
--h：显示帮助
--C：根据现有的机器克隆，克隆后，所有的iplist中的主机都会根据前面的机器克隆，目前版本克隆时只克隆group和template。interface部分采用默认配置。
-	interface默认配置："interfaces":[{"type":1,"main":1,"useip":1,"ip":"'+ip+'","dns":"","port":"10050"}]
--A：添加主机，添加之后，host、name都是和ip一样
--T：显示所有可用的模板
--G：显示所有主机组
--D：删除ip，如果存在一个ip对用多个host的情况，都会删除
--V：显示版本
+所有操作都是支持批量的   
+-h：显示帮助   
+-C：根据现有的机器克隆，克隆后，所有的iplist中的主机都会根据前面的机器克隆，目前版本克隆时只克隆group和template。interface部分采用默认配置。   
+	interface默认配置："interfaces":[{"type":1,"main":1,"useip":1,"ip":"'+ip+'","dns":"","port":"10050"}]   
+-A：添加主机，添加之后，host、name都是和ip一样     
+-T：显示所有可用的模板   
+-G：显示所有主机组   
+-D：删除ip，如果存在一个ip对用多个host的情况，都会删除   
+-V：显示版本   
 
-这里所有的添加也好，克隆也好，ip、host、name都一样,采用的都是ip
-最后温馨提示：妥善保管，权限甚大。
+这里所有的添加也好，克隆也好，ip、host、name都一样,采用的都是ip   
+最后温馨提示：妥善保管，权限甚大。   
